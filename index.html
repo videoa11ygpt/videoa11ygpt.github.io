@@ -16,17 +16,17 @@
         <h1 class="title"><strong>VideoA11yGPT: Method and Datasets for Accessible Video
                 Description</strong></h1>
         <div class="authors">
-            <a href="http://chaoyuli.com" class="author-link">Chaoyu Li<sup>1</sup></a>,
-            <a href="https://scholar.google.com/citations?user=fLYubiQAAAAJ&hl=en" class="author-link">Sid
-                Padmanabhuni<sup>1</sup></a>,
-            <a href="https://www.linkedin.com/in/maryam-saadat-cheema/" class="author-link">Maryam
-                Cheema<sup>1</sup></a>,
+            <a href="http://chaoyuli.com" class="author-link">Chaoyu Li</a><sup>1</sup>,
+            <a href="mailto:spadma20@asu.edu" class="author-link">Sid
+                Padmanabhuni</a><sup>1</sup>,
+            <a href="mailto:" class="author-link">Maryam
+                Cheema</a><sup>1</sup>,
             <a href="https://www.cs.rochester.edu/~cxu22/" class="author-link">Chenliang
-                Xu<sup>2</sup></a>,
+                Xu</a><sup>2</sup>,
             <a href="https://hastiseifi.com" class="author-link">Hasti
-                Seifi<sup>1</sup></a>,
+                Seifi</a><sup>1</sup>,
             <a href="https://pooyanfazli.com" class="author-link">Pooyan
-                Fazli<sup>1</sup></a>
+                Fazli</a><sup>1</sup>
             <div class="affiliation">
                 <sup>1</sup>Arizona State University, <sup>2</sup>University of Rochester
             </div>
@@ -35,12 +35,11 @@
             <a href="downloads.html" class="btn btn-dark">
                 <i class="fas fa-database"></i>Dataset
             </a>
-            <!-- Uncomment for Paper Link
-            <a href="#" class="btn btn-dark">
-                <i class="fas fa-file-alt"></i>Paper
-            </a> -->
+            <a href="" class="btn button-secondary">
+                <i class="fas fa-file-alt"></i> Paper
+            </a>
             <a href="https://github.com/videoa11ygpt/VideoA11yGPT" class="btn btn-dark">
-                <i class="fab fa-github"></i>GitHub
+                <i class="fab fa-github"></i>Code
             </a>
         </div>
     </div>
@@ -86,24 +85,14 @@
             human judgment or depended on audio cues, leading to a set of 42 optimized AD
             guidelines.
         </p>
-        <p>
-            To generate video descriptions, we employed a local maximum algorithm to identify
-            keyframes in videos. This method involves converting video frames from RGB to LUV color
-            space to prioritize luminance, then calculating the absolute difference between
-            successive frames to identify significant changes. To reduce noise, these differences
-            were smoothed over a sliding window of 15 frames, with peaks in this smoothed data
-            indicating key transitions or scenes in the video. This process helps in pinpointing
-            relevant moments for description using our optimized AD guidelines, as demonstrated with
-            our specialized prompt format, VideoA11yGPT.
-        </p>
         <div class="citation-container">
             <pre><code>
-    Imagine your role is to generate descriptions for videos to make them accessible to blind and
-    low vision individuals. You will watch a sequence of keyframes from a video and read the current
-    description of this video. Your task is to revise the current description. You must follow all
-    the given instructions. Output your result in a dictionary format: {"Video_Category": A string
-    representing the category of video you believe it to be, "Revised_Desc": A string of revised
-    description.}
+Imagine your role is to generate descriptions for videos to make them accessible to blind and
+low vision individuals. You will watch a sequence of keyframes from a video and read the current
+description of this video. Your task is to revise the current description. You must follow all
+the given instructions. Output your result in a dictionary format: {"Video_Category": A string
+representing the category of video you believe it to be, "Revised_Desc": A string of revised
+description.}
             </code></pre>
         </div>
         <p>
@@ -225,8 +214,6 @@
             91.76% (78 out of 85 instances), demonstrating significant enhancement in how BLV
             individuals understand and enjoy video content.
         </p>
-        <img src="assets/images/blind_prefer.png" alt="VideoA11yGPT outperforms human annotations in
-        all five video categories (p less than 0.05).">
         <p>
             Participants highlighted several reasons for preferring VideoA11yGPT, including the
             detailed content, clarity, and accuracy of the descriptions, which depicted precise
@@ -300,9 +287,6 @@
             up 6.8% and 4.6% of the dataset, respectively. This broader and longer range of caption
             lengths reflects an emphasis on providing more comprehensive descriptions to enhance
             accessibility for BLV viewers.
-        </p>
-        <p>
-            Feel free to download these datasets <a href="downloads.html"><strong>here</strong></a>.
         </p>
     </div>
     <div class="article-text mt-5">
@@ -433,12 +417,6 @@
         showVideo(currentVideoIndex);
         });
     </script>
-    <div class="article-text mt-5">
-        <p>
-            If you have any questions, please reach out to <a href="mailto:chaouyuli@asu.edu">Chaoyu
-                Li</a> or <a href="mailto:spadma20@asu.edu">Sid Padmanabhuni</a>.
-        </p>
-    </div>
     <!-- Uncomment for Citation
 
     <div class="article-text mt-5">
@@ -463,9 +441,17 @@
             });
         });
     </script>         -->
+    <div class="article-text mt-5">
+        <h2>Acknowledgments</h2>
+        <p>
+            This research was supported by the National Eye Institute (NEI) of the National Institutes of Health
+            (NIH) under award number R01EY034562. The content is solely the responsibility of the authors
+            and does not necessarily represent the official views of the NIH.
+        </p>
+    </div>
     <footer class="footer">
         <div class="container text-center">
-            © 2024 People and Robotics Laboratory
+            © 2024 People and Robots Lab
         </div>
     </footer>
 </body>
