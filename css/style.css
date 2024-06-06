@@ -18,8 +18,8 @@ body {
   font-size: 18px;
 }
 .author-link {
+  text-decoration: none;
   color: #0056b3;
-  text-decoration: underline;
   transition: 0.3s;
 }
 
