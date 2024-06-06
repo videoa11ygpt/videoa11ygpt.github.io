@@ -237,40 +237,39 @@ description.}
         </p>
         <h5 class="subsection">VALOR32K-BLV</h5>
         <p>
-            The VALOR32K-BLV dataset consists of 29,635 video clips distributed across 15
-            categories, with each clip lasting 10 seconds. These categories, alongside the video
-            descriptions, were generated using GPT-4V, based on the 15 video categories used in our
-            evaluation dataset. To assess the accuracy of the categorization, we randomly selected 5
-            videos from each category, totaling 75 videos. We then recruited 225 participants via
-            MTurk (152 males and 71 females, aged 21 to 68 years). Each participant viewed a video
-            and voted on whether the category assigned by GPT-4V was correct. Each video received
-            three votes, and videos that were marked as incorrect by at least two voters were
-            considered misclassified. The results indicated that 96% (72 out of 75) of the videos
-            were correctly categorized.
+            The VALOR32K-BLV dataset has 29,635 video clips (23,268 trainset, 3,179 valset, and
+            3,188 testset) across 15 categories, each lasting 10 seconds. We generated these
+            categories alongside the video descriptions using GPT-4V, based on the 15 categories in
+            Section~\ref{sec:videos}. To verify categorization accuracy, we randomly sampled 5
+            videos from each category (75 videos in total) and recruited 225 MTurk participants (152
+            males, 71 females, aged 21--68 years) to rate the correctness of the assigned
+            categories. A video was deemed misclassified if at least two out of three votes
+            indicated an incorrect category. Our results confirmed that 96\% (72 out of 75) of the
+            videos were accurately categorized.
         </p>
         <img src="assets/images/valor32k-blv-stats.png" alt="Video and description statistics in
         VALOR32K-BLV. The dataset encompasses a diverse set of categories and contains a diverse
         distribution of description lengths.">
         <p>
-            The average caption length in the VALOR32K-BLV dataset is 48.92 words, which is
-            significantly longer than the 19.68 words in the original VALOR32K dataset. The
-            distribution of caption lengths in VALOR32K-BLV shows a preference for captions within
-            the 40-60 word range (35.4%), followed by 20-40 words (33.8%). Very short captions (less
-            than 20 words) and long captions (more than 80 words) constitute only 3.9% and 8.8% of
-            the dataset, respectively.
-        </p>
-        <p>
-            The dataset encompasses a diverse set of categories with How-to & Instructional (18.8%),
-            Music (16.9%), and Film and Animation (15%) being the most prominent categories.
-            Conversely, News and Politics and Nonprofits and Activism each comprise less than 1% of
-            the videos. This data shows the varied content and description lengths in VALOR32K-BLV,
-            aimed at enhancing accessibility for BLV individuals.
+            The average caption length in the VALOR32K-BLV dataset is 48.92 words, which is notably
+            longer than 19.68 words in the VALOR32K dataset. Figure 6 presents the caption length
+            distribution in VALOR32K-BLV, with the majority of captions ranging between 40-60 words
+            (35.4%) and 20-40 words (33.8%). Captions shorter than 20 words or longer than 80 words
+            comprise only 3.9% and 8.8%, respectively. The figure also shows video distribution
+            across 15 categories; How-to and Instructional (18.8%), Music (16.9%), and Film and
+            Animation (15%) dominate, while News and Politics and Nonprofits and Activism each make
+            up less than 1% of the videos.
         </p>
         <h5 class="subsection">YouCook2-BLV</h5>
         <p>
-            The YouCook2-BLV dataset includes 1,600 cooking videos, each averaging 5.27 minutes in
-            length. The average caption length for this dataset is 104.81 words, significantly
-            longer than the 67.55 words found in the original YouCook2 dataset.
+            The YouCook2-BLV dataset features 1,600 cooking videos (1,190 trainset, 410 valset) with
+            an average of 5.27 minutes in length. The average caption length in the YouCook2-BLV is
+            104.81 words which is considerably longer than 67.55 words in YouCook2. The distribution
+            of caption lengths in YouCook2-BLV (Figure 7) has a wide range, with most captions
+            falling within the 100-120 word range (28.6% of the total). This is followed by captions
+            spanning 80-100 words (25.5%), fewer than 80 words (18.8%), and those ranging from
+            120-140 words (15.8%). Longer captions, between 140-160 words and over 160 words,
+            comprise 6.8% and 4.6% of the data, respectively.
         </p>
         <img src="assets/images/youcook2-blv-stats.png" alt="Video and description statistics in
         YouCook2-BLV. Video durations range from 1 minute to over 15 minutes, and the dataset
