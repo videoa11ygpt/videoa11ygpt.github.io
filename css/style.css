@@ -1,0 +1,198 @@
+/* Page CSS */
+body {
+  font-family: "Lato", Verdana, Helvetica, Calibri;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+  color: #333; 
+  padding-bottom: 70px;
+}
+.title {
+  width: 780px;
+  font-size: 40px;
+  margin: 20px auto;
+}
+
+/* Author links */
+.authors {
+  font-size: 18px;
+}
+.author-link {
+  text-decoration: none;
+  color: #0056b3;
+  transition: 0.3s;
+}
+
+/* Affiliation */
+.affiliation {
+  font-size: 16px;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+/* Images */
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 30px auto;
+  transition: 0.3s;
+}
+
+/* Text sections */
+.article-text {
+  text-align: justify;
+  max-width: 800px;
+  margin: auto;
+  font-size: 16px;
+  line-height: 1.6;
+}
+.article-text h2 {
+  font-size: 30px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+.subsection {
+  font-size: 20px;
+  padding-top: 13px;
+  padding-bottom: 7px;
+}
+
+/* Button styles */
+.btn-dark {
+  color: #fff;
+  background-color: #000;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+.btn-dark i,
+.fab {
+  margin-right: 5px;
+}
+.button-secondary{
+  color: #fff;
+  background-color: gray;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+/* Videos */
+.video-container {
+  position: relative;
+  width: 750px; 
+  margin: 20px auto;
+  padding: 2%; 
+  background-color: #f5f5f5;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+.video-container video {
+  width: 100%;
+  height: auto; 
+  border-radius: 15px;
+}
+
+/* Video buttons (next and prev) */
+#prev,
+#next {
+  position: absolute;
+  transition: 0.5s;
+  top: 50%; 
+  transform: translateY(-50%); 
+  cursor: pointer;
+  background-color: #000;
+  color: #ffffff;
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  z-index: 10;
+}
+#next {
+  right: -70px; 
+}
+#prev {
+  left: -70px; 
+}
+#prev:hover,
+#next:hover {
+  background-color: #333; 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+  height: 100px;
+}
+
+/*Captions for videos */
+.cap-title {
+  font-family: "Lato", Verdana, Helvetica, Calibri;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.caption-box {
+  font-family: "Lato", Verdana, Helvetica, Calibri;
+  text-align: left;
+  padding: 10px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+/* Citations */
+.citation-container {
+  background-color: #f4f4f4; 
+  color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px auto;
+  width: 750px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: "Courier New", Courier, monospace;
+  transition: 0.3s;
+}
+
+.citation-container:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+.footer {
+  background-color: #f8f9fa;
+  color: #6c757d;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive settings */
+@media (max-width: 480px) {
+  .video-container {
+    margin: 10px auto;
+  }
+  .prev,
+  .next {
+    width: 70px; 
+    height: 40px;
+    padding: 15px; 
+    font-size: 20px; 
+  }
+  .caption-box {
+    padding: 15px;
+    font-size: 14px; 
+  }
+}
