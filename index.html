@@ -254,14 +254,14 @@ Instruction #3: ...
         <h4>Benchmarking VideoA11y</h4>
         <img src="assets/images/score_3.png" alt="Comparison of standard NLP metrics for di!erent models on a held-out test set. Bold number indicate the best performance, and underlined number indicate the second best performance.">
         <p>
-            Fine-tuned models consistently outperformed baseline models across all metrics. Key findings include:
+            Baseline models with VideoA11y consistently outperformed baseline models without VideoA11y across all metrics. Key findings include:
         </p>
         <ul>
             <li>
-            <strong>Standard Metrics:</strong> VideoA11y-32B achieved the highest scores in BLEU, METEOR, CIDEr, and SPICE, followed by VideoA11y-7B. These models demonstrated improved semantic richness and alignment with ground truth.
+            <strong>Standard Metrics:</strong> SPICE demonstrates the most pronounced gains. This suggests that VideoA11y enables models to produce descriptions that are semantically closer to the ground truth, even when the exact wording differs.
             </li>
             <li>
-            <strong>Custom Metrics:</strong> Evaluations using GPT-4o as an evaluator showed that VideoA11y-32B achieved the highest ratings on descriptiveness, objectivity, accuracy, and clarity. VideoA11y-7B also performed well, surpassing baseline models.
+            <strong>Custom Metrics:</strong> VideoA11y yields significant improvements in the accurate and clear metrics, which are particularly impactful for BLV users. Enhanced accuracy ensures that descriptions faithfully capture the content of the video without introducing misleading or irrelevant information, while improved clarity provides well-structured and easily comprehensible descriptions.
             </li>
         </ul>
         <img src="assets/images/score_4.png" alt="Comparison of custom metrics for di!erent models on a held-out test set. Bold number indicate the best performance, and underlined number indicate the second best performance.">
